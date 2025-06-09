@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .info-section {
+            margin: 20px 0;
+        }
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+
+        <div class="info-section">
+            <h2>About</h2>
+            <p>This is a basic HTML page with some essential information. It demonstrates a clean, simple layout with modern styling.</p>
+            <p>This page includes basic HTML5 structure, CSS styling, and responsive design principles.</p>
+        </div>
+
+        <div class="info-section">
+            <h2>Features</h2>
+            <ul>
+                <li>Clean, modern design</li>
+                <li>Responsive layout</li>
+                <li>Cross-browser compatible</li>
+                <li>Easy to customize</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2>Technical Details</h2>
+            <p><strong>HTML Version:</strong> HTML5</p>
+            <p><strong>CSS:</strong> Embedded styles</p>
+            <p><strong>Viewport:</strong> Mobile-friendly responsive design</p>
+            <p><strong>Character Encoding:</strong> UTF-8</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Website:</strong> example.com</p>
+            <p><strong>Email:</strong> contact@example.com</p>
+            <p><strong>Last Updated:</strong> <span id="date"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Display current date
+        document.getElementById('date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
