@@ -19,7 +19,7 @@
 
         <div class="my-5">
             <h2 class="text-gray-600 border-b-2 border-gray-300 pb-2 text-xl font-semibold mb-4">Meet Our Founder</h2>
-            
+
             <div class="flex flex-col md:flex-row items-center md:items-start gap-6 mb-6">
                 <div class="w-48 h-48 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-white text-6xl font-bold">
                     AJ
@@ -93,6 +93,11 @@
     <script>
         // Display current date
         document.getElementById('date').textContent = new Date().toLocaleDateString();
+
+        // Bug: Trying to access undefined property
+        const userProfile = null;
+        const displayName = userProfile.name.toUpperCase(); // This will throw TypeError
+        console.log('User display name:', displayName);
     </script>
 </body>
 </html>
