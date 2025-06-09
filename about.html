@@ -94,9 +94,9 @@
         // Display current date
         document.getElementById('date').textContent = new Date().toLocaleDateString();
 
-        // Bug: Trying to access undefined property
+        // Fixed: Added null checking to prevent TypeError
         const userProfile = null;
-        const displayName = userProfile.name.toUpperCase(); // This will throw TypeError
+        const displayName = userProfile?.name?.toUpperCase() || 'Guest User';
         console.log('User display name:', displayName);
     </script>
 </body>
